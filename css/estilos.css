@@ -1,0 +1,813 @@
+/*ESTILOS GENERALES*/
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+html{
+   font-size: 100%;
+}
+
+body{
+   font-family: Montserrat, Roboto, sans-serif;
+}
+
+h1{
+   font-size: 2.5rem;
+   color:#57c1ff;
+   font-weight: bold;
+   padding-bottom: 1%;
+}
+
+h2{
+   font-size: 2.188rem;
+   color:#57c1ff;
+   font-weight: bold;
+ }
+
+h3{
+   font-size: 1.25rem;
+   color: #57c1ff;
+   font-weight: bold;
+}
+
+h4{
+   font-size: 0.875rem;
+   color: rgb(78,81,81);
+   font-weight: bold;
+}
+
+p{
+   color:rgb(78,81,81); 
+   text-align: justify;
+   font-family: Montserrat, sans-serif;
+   line-height: 2;
+}
+
+a{
+    text-decoration:none; 
+    color:rgb(78,81,81);
+    font-weight: bold;
+    letter-spacing: 3px;
+ }
+
+ a:hover{
+   color: rgb(8,130,181);
+}
+
+.derecha{
+   text-align: right;
+}
+
+.negrita{
+   font-weight: bold;
+}
+
+.margin{
+   margin-top: 5%;
+   margin-left: 15%;
+   margin-right: 15%;
+
+}
+
+.borde{
+   border-top: solid 3px rgb(192, 194, 194);
+   padding-top: 5%;
+}
+
+/*HEADER*/
+
+.contenedorHeader{
+   max-width: 98.5%;
+   margin-left: 0.5%;
+   margin-right: 0.5%;
+   margin-bottom: 1%;
+}
+
+.logoScale img:hover{
+   transform: scale(1.02);
+ }
+
+ #divRedes{
+   float: right;
+   margin: 5px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+}
+
+#divRedes img:hover{
+   transform: scale(1.1);
+}
+
+.ulRedes{
+   list-style-type: none; 
+   padding-left: 0;  
+}
+
+.ulRedes li{
+   display: inline-block;
+}
+
+.dropdownServ{
+   padding-left: 8%;
+}
+
+
+/*FOOTER*/
+
+footer{
+   background-color: whitesmoke;
+   margin-top: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding-top: 20px;
+}
+
+.divDatosFooter {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 33%;
+  padding-left: 30px;
+}
+
+.telMailDic{
+  margin: 5px;
+}
+
+.telMailDic p{
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 1%;
+}
+
+.divLogoFooter{
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   justify-content: center;
+   width: 33%;
+}
+
+.divLogoFooter img:hover{
+   transform: scale(1.02);
+ }
+
+ footer h4{
+   text-align: center;
+}
+
+.menuFooter{
+   display: flex;
+   justify-content: flex-end;
+   width: 33%;
+   padding-left: 10px;
+}
+
+.row {
+   --bs-gutter-x: 0.5rem;
+}
+
+.menuFooter ul{
+   padding-top: 0px;
+}
+
+.menuFooter li{
+   display: block;
+   text-align: right;
+   font-size: 14px;
+   line-height: 2;
+   padding-right: 30px;
+}
+
+/*INDEX*/
+
+.imagenPortada{
+   margin-bottom: 30px;
+   animation-name: fadeIn;
+   animation-iteration-count: 1;
+   animation-timing-function: ease-in;
+   animation-duration: 2s;
+   animation-delay: 0s;
+}
+
+@keyframes fadeIn{
+   0% {opacity: 0%;}
+   100% {opacity: 100%;}
+}
+
+/*CAROUSEL*/
+
+.carousel {
+   margin-bottom: 4rem;
+ }
+ 
+ .carousel-caption {
+   bottom: 3rem;
+   z-index: 10;
+ }
+ 
+ .carousel-item {
+   height: 32rem;
+ }
+ 
+ .carousel-item > img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   min-width: 100%;
+   height: 32rem;
+ }
+
+ .fondoBajada{
+   background-color: rgba(83, 86, 86, 0.5);
+   padding-left: 15px;
+}
+
+.fondoBajada p{
+   color: white;
+   text-shadow: 0 1px 3px black;
+}
+
+.fondoBajada h1{
+   font-size: 35px;
+   text-align: left;
+   text-shadow: 0 1px 3px black;
+}
+
+.fondoBajada a{
+   color: white;
+}
+
+/*BOTON WHATSAPP*/
+ 
+.divWapp{
+   position: fixed;
+   bottom: 220px;
+   right: 30px;
+}
+
+ .divWapp img:hover{
+   animation-name: gira;
+   animation-iteration-count: 1;
+   animation-timing-function: ease-in;
+   animation-duration: 1s;
+   animation-delay: 0s;
+}
+
+@keyframes gira{
+   0% {transform: rotateY(0deg);}
+   100% {transform: rotateY(360deg);}
+}
+
+
+/*QUIENES SOMOS*/
+
+.imagenQuienes{/*Estas propiedades se repiten en el resto de las pages*/
+   margin-bottom: 30px;
+   animation-name: fadeIn;
+   animation-iteration-count: 1;
+   animation-timing-function: ease-in;
+   animation-duration: 2s;
+   animation-delay: 0s;
+}
+
+.contenedorQuienes{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-bottom: 100px;
+}
+
+.divQuienes{
+   background-color: whitesmoke;
+   width: 70%;
+   margin: 15px;
+   padding: 25px;
+}
+
+.contenedorIntegrantes{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 100%;
+   margin-top: 20px;
+   padding: 50px;
+}
+
+.contenedorMiembros{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   width: 33%;
+   align-content: space-around;
+}
+
+.contenedorRow{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   width: 100%;
+   height: 300px;
+}
+
+.contenedorMiembros img{
+   width: 100%;
+   margin-bottom: 4%;
+   box-shadow: 10px 5px 5px 0 lightgrey;
+}
+
+.divMiembros{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   width: 220px;
+   height: 220px;
+   margin-right: 10px;
+}
+
+.descripcion{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: center;
+   width: 220px;
+   height: 50px;
+   margin-top: 5%;
+   margin-bottom: 50px;
+   background-color: #57c1ff;
+}
+
+.descripcion p{
+   line-height: 0;
+   text-align: center;
+   color: white;
+   padding-top: 5%;
+   margin-bottom: 5%;
+}
+
+.contenedorQuienes h3{
+   padding-top: 3%;
+}
+
+/*SERVICIOS*/
+
+.gridAreaServicios{
+   display: grid;
+   grid-template-areas:
+     "cont" 
+     "parrafoCont"
+     "jur"
+     "parrafoJur"
+     "admin"
+     "parrafoAdmin"
+     "capac"
+     "parrafoCapac"
+    ;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 5% 18% 5% 21% 5% 19,5% 5% 18%;
+    margin-top: 50px;
+ }
+
+.cont{
+   grid-area: cont;
+   background-color: #a5ddff;
+ }
+
+.parrafoCont{
+   grid-area: parrafoCont;
+}
+
+.jur{
+   grid-area: jur;
+   background-color: #57c1ff;
+}
+
+.parrafoJur{
+   grid-area: parrafoJur;
+}
+
+.admin{
+   grid-area: admin;
+   background-color: #b8c4ff;
+}
+
+.parrafoAdmin{
+   grid-area: parrafoAdmin;
+}
+
+.capac{
+   grid-area: capac;
+   background-color: #6c86ff;
+}
+
+.parrafoCapac{
+   grid-area: parrafoCapac;
+}
+
+.ordenTitulos{
+   grid-column-start: 1;
+   grid-column-end: 3;
+   padding: 20px;
+   box-shadow: 10px 5px 5px 0 lightgrey;
+}
+
+.ordenParrafos{
+   grid-column-start: 2;
+   grid-column-end: 4;
+   background-color: whitesmoke;
+   padding: 20px;
+   border-bottom: solid 50px white;
+}
+
+.ordenTitulos h3{
+   color: white;
+   text-shadow: 0 1px 3px black;
+}
+
+/*NOTICIAS*/
+
+.gridAreaNoticias{
+   display: grid;
+   grid-template-areas:
+     "tituloUno tituloUno" 
+     "parrafoUno imagenUno"
+     "tituloDos tituloDos"
+     "imagenDos parrafoDos"
+     "tituloTres tituloTres"
+     "parrafoTres imagenTres"
+    ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 7vh 52vh 7vh 52vh 7vh 100vh;
+    grid-row-gap: 2%;
+    margin-top: 2%;
+ }
+
+.tituloUno{
+   grid-area: tituloUno;
+   background-color: whitesmoke;
+   display: flex;
+   padding-top: 10px;
+   padding-left: 10px;
+ }
+
+ .tituloDos{
+   grid-area: tituloDos;
+   background-color: whitesmoke;
+   padding-top: 10px;
+   padding-left: 10px;
+ }
+
+ .tituloTres{
+   grid-area: tituloTres;
+   background-color: whitesmoke;
+   padding-top: 10px;
+   padding-left: 10px;
+ }
+
+ .parrafoUno{
+   grid-area: parrafoUno;
+ }
+
+ .parrafoDos{
+   grid-area: parrafoDos;
+ }
+
+ .parrafoTres{
+   grid-area: parrafoTres;
+ } 
+
+ .imagenUno{
+   grid-area: imagenUno;
+   display: flex;
+   justify-content: flex-end;
+ }
+
+ .imagenDos{
+   grid-area: imagenDos;
+   width: 95%;
+   height: 40vh;
+   display: flex;
+   justify-content: flex-start;
+ }
+
+ .imagenTres{
+   grid-area: imagenTres;
+ }
+
+ .gridAreaNoticias img{
+   width: 95%;
+   height: 40vh;
+ }
+
+.miniCarousel{
+   padding-left: 30px;
+}
+
+ .miniCarousel img{
+   width: 95%;
+   height: 100%;
+ }
+
+
+
+/*CONTACTO*/
+
+form{
+   font-family: Montserrat, Roboto, sans-serif;
+   font-size: 14px;
+   background-color: whitesmoke;
+}
+
+/*ERROR 404*/
+
+.imagen404{
+   width: 25%;
+}
+
+.error h2{
+   margin-top: 2%;
+}
+
+.error h3{
+   color: rgb(78,81,81);
+   margin-top: 2%;
+}
+
+.error a{
+   text-decoration: underline;
+   color:rgb(78,81,81);
+   font-weight: bold;
+   letter-spacing: 0;
+}
+
+.error a:hover{
+   color: #57c1ff;;
+}
+
+
+
+
+
+/**************
+ MEDIA QUERIES 
+***************/
+
+
+/*SMARTPHONE*/
+@media (max-width: 599px){
+
+   /*GENERALES*/
+   html{
+      font-size: 80%;
+   }
+
+   .margin{
+      margin-left: 5%;
+      margin-right: 5%;
+   }
+
+   .divWapp{
+      z-index: 5;
+      right: 5px;
+   }
+
+   /*HEADER*/
+   .headerQueries{
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   /*FOOTER*/
+   .divLogoFooter{
+      display: none;
+   }
+
+   .menuFooter li{
+      padding: 0px;
+   }
+
+   .divDatosFooter{
+      padding-left: 6px;
+   }
+
+   /*INDEX*/
+   .imagenPortada{
+      width: 80%;
+   }
+
+   .seccionesIndex{
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   .parrafosIndex{
+      position: relative;
+      z-index: 2;
+   }
+
+   .imagenes{
+      width: 80%;
+      position: absolute;
+      opacity: 0.2;
+   }
+
+   /*QUIENES*/
+
+   .imagenQuienes{
+      width: 70%;
+      height: 300px;
+   }
+
+   .divQuienes p{
+      text-align: left;
+   }
+
+   .contenedorNuestroEquipo{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      width: 100%;
+   }
+   
+   .contenedorIntegrantes{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      margin-top: 20px;
+      padding: 20px;
+   }
+
+   .contenedorRow{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 1000px;
+   }
+
+   .descripcion{
+      margin-top: 8%;
+   }
+
+   /*SERVICIOS*/
+
+   .gridAreaServicios p{
+      text-align: left;
+   }
+
+   /*NOTICIAS*/
+
+   .gridAreaNoticias{
+      display: grid;
+      grid-template-areas:
+        "tituloUno" 
+        "imagenUno"
+        "parrafoUno" 
+        "tituloDos" 
+        "imagenDos" 
+        "parrafoDos" 
+        "tituloTres"
+        "imagenTres"
+        "parrafoTres" 
+       ;
+       grid-template-columns: 100%;
+       grid-template-rows: 5vh 40vh 45vh 8vh 40vh 40vh 5vh 55vh 80vh;
+       grid-row-gap: 1%;
+       margin-top: 2%;
+    }
+
+    .imagenUno{
+       width: 100%;
+       justify-content: center;
+    }
+
+    .imagenDos{
+       width: 100%;
+       justify-content: center;
+    }
+
+    .miniCarousel{
+       padding-left: 0;
+    }
+}
+
+/*TABLET*/
+
+@media (min-width: 600px) and (max-width: 1023px){
+   /*GENERALES*/
+   html{
+      font-size: 90%;
+   }
+
+   .margin{
+      margin-left: 10%;
+      margin-right: 10%;
+   }
+
+   .divWapp{
+      z-index: 5;
+      right: 3%;
+   }
+
+   /*INDEX*/
+   .imagenPortada{
+      width: 80%;
+   }
+
+   .seccionesIndex{
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   .parrafosIndex{
+      position: relative;
+      z-index: 2;
+   }
+
+   .imagenes{
+      width: 70%;
+      position: absolute;
+      opacity: 0.2;
+   }
+
+   /*QUIENES*/
+
+   .imagenQuienes{
+      width: 70%;
+      height: 300px;
+   }
+
+   .contenedorIntegrantes{
+      width: 100%;
+      padding: 0;
+   }
+
+   .divMiembros{
+      width: 80%;
+   }
+
+   .descripcion{
+      width: 80%;
+      margin-top: 0.3%;
+   }
+
+   .gridAreaNoticias{
+      display: grid;
+      grid-template-areas:
+        "tituloUno" 
+        "imagenUno"
+        "parrafoUno" 
+        "tituloDos" 
+        "imagenDos" 
+        "parrafoDos" 
+        "tituloTres"
+        "imagenTres"
+        "parrafoTres" 
+       ;
+       grid-template-columns: 100%;
+       grid-template-rows: 5vh 40vh 25vh 8vh 40vh 20vh 5vh 45vh 50vh;
+       grid-row-gap: 1%;
+       margin-top: 2%;
+    }
+
+    .imagenUno{
+       width: 100%;
+       justify-content: center;
+    }
+
+    .imagenDos{
+       width: 100%;
+       justify-content: center;
+    }
+
+    .miniCarousel{
+       padding-left: 0;
+    }
+
+    /*FOOTER*/
+
+   .telMailDic{
+       margin-top: 5%;
+    }
+
+    .telMailDic p{
+       font-size: 13px;
+    }
+}
+

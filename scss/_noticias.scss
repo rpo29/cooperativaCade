@@ -1,0 +1,84 @@
+/*NOTICIAS*/
+
+.gridAreaNoticias{
+    display: grid;
+    grid-template-areas:
+      "tituloUno tituloUno" 
+      "parrafoUno imagenUno"
+      "tituloDos tituloDos"
+      "imagenDos parrafoDos"
+      "tituloTres tituloTres"
+      "parrafoTres imagenTres"
+     ;
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 7vh 60vh 7vh 60vh 7vh 120vh;
+     grid-row-gap: 2%;
+     margin-top: 2%;
+  }
+ 
+ .tituloUno{
+    grid-area: tituloUno;
+    background-color: whitesmoke;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+ 
+  .tituloDos{
+    grid-area: tituloDos;
+    background-color: whitesmoke;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+ 
+  .tituloTres{
+    grid-area: tituloTres;
+    background-color: whitesmoke;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+ 
+  .parrafoUno{
+    grid-area: parrafoUno;
+  }
+ 
+  .parrafoDos{
+    grid-area: parrafoDos;
+  }
+ 
+  .parrafoTres{
+    grid-area: parrafoTres;
+  } 
+ 
+  .imagenUno{
+    grid-area: imagenUno;
+    display: flex;
+    justify-content: flex-end;
+  }
+ 
+  .imagenDos{
+    grid-area: imagenDos;
+    width: 95%;
+    height: 40vh;
+    display: flex;
+    justify-content: flex-start;
+  }
+ 
+  .imagenTres{
+    grid-area: imagenTres;
+  }
+ 
+  .gridAreaNoticias img{
+    width: 95%;
+    height: 40vh;
+  }
+ 
+ .miniCarousel{
+    padding-left: 30px;
+ }
+ 
+  .miniCarousel img{
+    width: 95%;
+    height: 100%;
+  }
+ 

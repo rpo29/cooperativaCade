@@ -1,0 +1,232 @@
+/**************
+ MEDIA QUERIES 
+***************/
+
+
+/*SMARTPHONE*/
+@media (max-width: 599px){
+
+    /*GENERALES*/
+    html{
+       font-size: 80%;
+    }
+ 
+    .margin{
+       margin-left: 5%;
+       margin-right: 5%;
+    }
+ 
+    .divWapp{
+       z-index: 5;
+       right: 5px;
+    }
+ 
+    /*HEADER*/
+
+    .contenedorHeader{
+       display: flex;
+       flex-direction: column-reverse;
+       flex-wrap: nowrap;
+    }
+
+    .contenedorHeader__redes{
+       width: 98%;
+       display: flex;
+       justify-content: flex-end;
+   }
+
+    /*FOOTER*/
+
+    .padding{
+       padding-left: calc(var(--bs-gutter-x) * 0);
+    }
+
+    .padding p{
+       text-align: left;
+    }
+
+    .contenedorFooter__logo{
+       display: none;
+    }
+ 
+    /*INDEX*/
+    .imagenPortada{
+       width: 80%;
+    }
+ 
+    .seccionesIndex{
+       flex-direction: column;
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+ 
+    .parrafosIndex{
+       position: relative;
+       z-index: 2;
+    }
+ 
+    .imagenes{
+       width: 80%;
+       position: absolute;
+       opacity: 0.2;
+    }
+ 
+    /*QUIENES*/
+ 
+    .contenedorQuienes p{
+       text-align: left;
+    }
+ 
+    .nosotros__contenedor{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: nowrap;
+       justify-content: center;
+       align-items: center;
+       margin-top: 20px;
+       padding: 20px;
+    }
+ 
+    /*SERVICIOS*/
+ 
+    .gridAreaServicios p{
+       text-align: left;
+    }
+ 
+    /*NOTICIAS*/
+ 
+    .gridAreaNoticias{
+       display: grid;
+       grid-template-areas:
+         "tituloUno" 
+         "imagenUno"
+         "parrafoUno" 
+         "tituloDos" 
+         "imagenDos" 
+         "parrafoDos" 
+         "tituloTres"
+         "imagenTres"
+         "parrafoTres" 
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 5vh 40vh 45vh 8vh 40vh 40vh 5vh 55vh 80vh;
+        grid-row-gap: 1%;
+        margin-top: 2%;
+     }
+ 
+     .imagenUno{
+        width: 100%;
+        justify-content: center;
+     }
+ 
+     .imagenDos{
+        width: 100%;
+        justify-content: center;
+     }
+ 
+     .miniCarousel{
+        padding-left: 0;
+     }
+ }
+ 
+ /*TABLET*/
+ 
+ @media (min-width: 600px) and (max-width: 1024px){
+    /*GENERALES*/
+    html{
+       font-size: 90%;
+    }
+ 
+    .margin{
+       margin-left: 10%;
+       margin-right: 10%;
+    }
+ 
+    .divWapp{
+       z-index: 5;
+       right: 3%;
+    }
+ 
+    /*INDEX*/
+    .imagenPortada{
+       width: 80%;
+    }
+ 
+    .seccionesIndex{
+       flex-direction: column;
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+ 
+    .parrafosIndex{
+       position: relative;
+       z-index: 2;
+    }
+ 
+    .imagenes{
+       width: 70%;
+       position: absolute;
+       opacity: 0.2;
+    }
+ 
+    /*QUIENES*/
+ 
+    .contenedorIntegrantes{
+       width: 100%;
+       padding: 0;
+    }
+ 
+    .nosotros__contenedor{
+       flex-wrap: wrap;
+    }
+ 
+    .descripcion{
+       width: 80%;
+       margin-top: 0.3%;
+    }
+ 
+    .gridAreaNoticias{
+       display: grid;
+       grid-template-areas:
+         "tituloUno" 
+         "imagenUno"
+         "parrafoUno" 
+         "tituloDos" 
+         "imagenDos" 
+         "parrafoDos" 
+         "tituloTres"
+         "imagenTres"
+         "parrafoTres" 
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 5vh 40vh 25vh 8vh 40vh 20vh 5vh 45vh 50vh;
+        grid-row-gap: 1%;
+        margin-top: 2%;
+     }
+ 
+     .imagenUno{
+        width: 100%;
+        justify-content: center;
+     }
+ 
+     .imagenDos{
+        width: 100%;
+        justify-content: center;
+     }
+ 
+     .miniCarousel{
+        padding-left: 0;
+     }
+ 
+     /*FOOTER*/
+ 
+    .telMailDic{
+        margin-top: 5%;
+     }
+ 
+     .telMailDic p{
+        font-size: 13px;
+     }
+ }
+ 
+ 

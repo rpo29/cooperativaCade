@@ -1,0 +1,266 @@
+/*ESTILOS GENERALES*/
+
+*{
+    margin: 0;
+    padding: 0;
+ }
+ 
+ html{
+    font-size: 100%;
+ }
+ 
+ body{
+    font-family: Montserrat, Roboto, sans-serif;
+ }
+
+ 
+ $gris: rgb(78,81,81);
+ $turqueza: #a8dcfa;
+ 
+ //COLORES LOGO
+ 
+ $colorUno: #a5ddff;
+ $colorDos: #57c1ff;
+ $colorTres: #b8c4ff;
+ $colorCuatro: #6c86ff;
+ 
+ @mixin sizes ($width, $height) {
+     height: $height;
+     width: $width;
+ }
+ 
+ h1{
+    font-size: 2.5rem;
+    color: $colorDos;
+    font-weight: bold;
+    padding-bottom: 1%;
+ }
+ 
+ h2{
+    font-size: 2.188rem;
+    color: $colorDos;
+    font-weight: bold;
+  }
+ 
+ h3{
+    font-size: 1.25rem;
+    color: $colorDos;
+    font-weight: bold;
+ }
+ 
+ h4{
+    font-size: 0.875rem;
+    color: $gris;
+    font-weight: bold;
+ }
+ 
+ p{
+    color: $gris; 
+    text-align: justify;
+    font-family: Montserrat, sans-serif; /*CHEQUEAR SI HACE FALTA ESTO*/
+    line-height: 2;
+ }
+ 
+ a{
+     text-decoration:none; 
+     color: $gris;
+     font-weight: bold;
+     letter-spacing: 3px;
+  }
+ 
+  a:hover{
+    color: $colorDos;
+ }
+ 
+ .derecha{
+    text-align: right;
+ }
+ 
+ .negrita{
+    font-weight: bold;
+ }
+ 
+ .margin{
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+ }
+ 
+ .borde{
+    border-top: solid 3px rgb(192, 194, 194);
+    padding-top: 5%;
+ }
+ 
+/*HEADER*/
+
+ .contenedorHeader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1%;
+    img{
+        width: 300px;
+        height: 150px;
+    }
+    img:hover{
+        transform: scale(1.02);
+      }
+}
+
+.contenedorHeader__redes{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 215px;
+
+    img{
+        width: 40px;
+        height: 40px;
+    }
+
+    img:hover{
+        transform: scale(1.1);
+    }
+    
+    ul{
+        list-style-type: none; 
+                        
+        li{
+            display: inline-block;
+        }
+    }
+}
+
+.contenedorHeader__nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: whitesmoke;
+   
+    ul{
+        width: 100%;
+        list-style: none;
+        padding-top: 1px;
+        padding-bottom: 1px;
+
+        a:hover{
+            transform: scale(1.05);
+        }
+        
+        li{
+            display: inline-block;
+            position:relative;
+            font-size: 18px;
+            margin-left: 10px;
+
+            ul{
+                background-color: rgba(245, 245, 245, 0.5);
+                text-align: left;
+                width: 13rem;
+                border-radius: 0;
+                border: none;
+
+                a{
+                  padding-left: 1%;
+                  padding-right: 1%;  
+                }                
+            }
+        }
+    }
+}
+
+/*FOOTER*/
+
+.contenedorFooter{
+    background-color: whitesmoke;
+    margin-top: 100px;
+    margin-right: 0;
+    padding-top: 20px;
+
+    ul{
+        list-style-type: none; 
+        padding-left: 1rem;
+                        
+        li{
+            display: inline-block;
+        }  
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 1%; 
+        padding-left: 1rem;
+    }
+ }
+
+.contenedorFooter__logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+
+    img:hover{
+        transform: scale(1.02);
+      }
+
+    h4{
+        text-align: center;
+     }
+}
+
+.contenedorFooter__nav{
+    display: flex;
+    justify-content: flex-end;
+ 
+    ul{
+        padding: 0px;
+    
+        li{
+            display: block;
+            text-align: right;
+            font-size: 14px;
+            line-height: 2;
+         }
+     }
+}
+
+.row {
+    --bs-gutter-x: 0.5rem;
+ }
+ 
+
+ /*ERROR 404*/
+
+.imagen404{
+    width: 25%;
+ }
+ 
+.error h2{
+    margin-top: 2%;
+ }
+ 
+ .error h3{
+    color: rgb(78,81,81);
+    margin-top: 2%;
+ }
+ 
+ .error a{
+    text-decoration: underline;
+    color:rgb(78,81,81);
+    font-weight: bold;
+    letter-spacing: 0;
+ }
+ 
+ .error a:hover{
+    color: #57c1ff;;
+ }
+ 
+
+ footer{
+     margin-top: 8%;
+ }

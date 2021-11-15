@@ -1,0 +1,79 @@
+/*INDEX*/
+
+.imagenPortada{
+    margin-bottom: 30px;
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+ }
+ 
+ @keyframes fadeIn{
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+ }
+ 
+ /*CAROUSEL*/
+ 
+ .carousel {
+    margin-bottom: 4rem;
+  }
+  
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  .carousel-item {
+    height: 32rem;
+  }
+  
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+ 
+  .fondoBajada{
+    background-color: rgba(83, 86, 86, 0.5);
+    padding-left: 15px;
+ }
+ 
+ .fondoBajada p{
+    color: white;
+    text-shadow: 0 1px 3px black;
+ }
+ 
+ .fondoBajada h1{
+    font-size: 35px;
+    text-align: left;
+    text-shadow: 0 1px 3px black;
+ }
+ 
+ .fondoBajada a{
+    color: white;
+ }
+ 
+ /*BOTON WHATSAPP*/
+  
+ .divWapp{
+    position: fixed;
+    bottom: 220px;
+    right: 30px;
+ }
+ 
+  .divWapp img:hover{
+    animation-name: gira;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay: 0s;
+ }
+ 
+ @keyframes gira{
+    0% {transform: rotateY(0deg);}
+    100% {transform: rotateY(360deg);}
+ }

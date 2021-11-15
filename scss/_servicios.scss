@@ -1,0 +1,84 @@
+/*SERVICIOS*/
+
+.gridAreaServicios{
+    display: grid;
+    grid-template-areas:
+      "cont" 
+      "parrafoCont"
+      "jur"
+      "parrafoJur"
+      "admin"
+      "parrafoAdmin"
+      "capac"
+      "parrafoCapac"
+      "masInfo"
+     ;
+     grid-template-columns: 5% 90% 5%;
+     grid-template-rows: 5% 18% 5% 20.5% 5% 20.5% 5% 18% 10%;
+     margin-top: 50px;
+     margin-bottom: 0;
+  }
+ 
+ .cont{
+    grid-area: cont;
+    background-color: #a5ddff;
+  }
+ 
+ .parrafoCont{
+    grid-area: parrafoCont;
+ }
+ 
+ .jur{
+    grid-area: jur;
+    background-color: #57c1ff;
+ }
+ 
+ .parrafoJur{
+    grid-area: parrafoJur;
+ }
+ 
+ .admin{
+    grid-area: admin;
+    background-color: #b8c4ff;
+ }
+ 
+ .parrafoAdmin{
+    grid-area: parrafoAdmin;
+ }
+ 
+ .capac{
+    grid-area: capac;
+    background-color: #6c86ff;
+ }
+ 
+ .parrafoCapac{
+    grid-area: parrafoCapac;
+ }
+
+ .masInfo{
+    grid-area: masInfo;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: justify;
+ }
+ 
+ .ordenTitulos{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 20px;
+    box-shadow: 10px 5px 5px 0 lightgrey;
+ }
+ 
+ .ordenParrafos{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-bottom: solid 50px white;
+ }
+ 
+ .ordenTitulos h3{
+    color: white;
+    text-shadow: 0 1px 3px black;
+    margin-top: 1%;
+ }

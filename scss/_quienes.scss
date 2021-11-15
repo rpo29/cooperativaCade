@@ -1,0 +1,84 @@
+/*QUIENES SOMOS*/
+
+.portada{
+    display: flex;
+    justify-content: center;
+
+    img{/*Estas propiedades se repiten en el resto de las pages*/
+        margin-bottom: 30px;
+        animation-name: fadeIn;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+        animation-delay: 0s;  
+    }
+}
+
+.contenedorQuienes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    div{
+        background-color: whitesmoke;
+        width: 70%;
+        margin: 15px;
+        padding: 25px;
+    }
+ }
+
+.nosotros{
+    margin-top: 5%;
+    p{
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h2{
+        margin-bottom: 5%;
+    }
+
+    h3{
+        text-align: center;
+        margin-bottom: 5%;
+    }
+}
+
+.nosotros__contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+    @each $fotos in cecilia, karina, mariano, alicia, romina, emiliano{
+        .#{$fotos} {
+            background-image: url("..img/quienes/$fotos.jpg");
+            @include sizes(220px, 220px); /*CAMBIAR TAMAÑO DE LAS IMAGENES*/
+            box-shadow: 10px 5px 5px 0 lightgrey;
+        }
+    }
+}
+
+.nosotros__descripcion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    @include sizes (220px,50px);
+    margin-top: 5%;
+    margin-bottom: 50px;
+    background-color: $colorDos;
+
+    p{ 
+        line-height: 0;
+        text-align: center;
+        color: white;
+        padding-top: 5%;
+        margin-bottom: 5%;
+    }
+ }
+
+ 
